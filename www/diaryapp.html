@@ -1,0 +1,47 @@
+<html>
+<head><title> YOUR DIARY</title>
+</head>
+
+
+<script>
+
+function save() {
+
+	var fieldValue = document.getElementById('field_Date').value;
+	localStorage.setItem('Date',fieldValue);
+	var fieldValue = document.getElementById('field_Title').value;
+	localStorage.setItem('Title',fieldValue);
+	var fieldValue = document.getElementById('field_Feelings').value;
+	localStorage.setItem('Feelings',fieldValue);
+	var fieldValue = document.getElementById('field_Your Contents').value;
+	localStorage.setItem('Your Contents',fieldValue);
+	
+}
+</script>
+
+
+<body bgcolor="skyblue">
+
+<center><h1><b>EVERYDAY DIARY</b></h1></center><BR>
+DATE: <input type="date"><br><br>
+TITLE: <input type="text" size="30"><br><br>
+
+	<B><I>Feelings:</I></B><br>
+<input type="checkbox"name="checkboxgood">Good
+<input type="checkbox"name="checkboxsad">Sad
+<input type="checkbox"name="checkboxhappy">Happy
+<input type="checkbox"name="checkboxangry">Angry<br>
+
+
+
+<center><h3><i><b>Your Contents:</b><i></h3>
+<textarea rows="10" cols="30"></textarea><br><br>
+
+		<center><input type="button" value="SUBMIT"><br><br>
+			<script src='diaryapp.js'></script>
+ 			 <script src='thankyou.html'></script>
+		<a href="thankyou.html"><input type="button" value="FINISH"></center></a>
+</body>
+
+
+</html>
